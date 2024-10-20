@@ -1,38 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
-    android:gravity="center_vertical"
-    android:orientation="horizontal"
-    android:background="?android:attr/selectableItemBackground">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_weight="3"
-        android:layout_height="wrap_content"
-        android:padding="4dp">
-        <!-- Foto do carro -->
-        <ImageView
-            android:id="@+id/img"
-            android:transitionName="@string/transition_key"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/amapa" />
-        <ProgressBar
-            android:id="@+id/progress"
-            style="@android:style/Widget.ProgressBar.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|center_vertical"
-            android:layout_marginRight="6dp"
-            android:visibility="invisible" />
-    </FrameLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/None"
-        android:layout_width="0dp"
-        android:layout_weight="7"
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="Amapá"
-        android:textColor="#000000" />
+        android:text="Nome" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital" />
+
+    <TextView
+        android:id="@+id/populacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="População" />
+
+    <TextView
+        android:id="@+id/regiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Região" />
 </LinearLayout>
